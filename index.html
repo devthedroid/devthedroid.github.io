@@ -3,122 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your App Name</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Uniq Software | App Development Company</title>
   <style>
     body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
-      background: #f9f9f9;
-      color: #333;
+      background: #f9fafb;
+      color: #111827;
     }
     header {
-      background: linear-gradient(to right, #4f46e5, #3b82f6);
+      background: linear-gradient(to right, #6366f1, #3b82f6);
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     header p {
-      margin-top: 0.5rem;
+      margin-top: 1rem;
       font-size: 1.2rem;
     }
-    .buttons {
-      margin-top: 1.5rem;
+    .section {
+      padding: 3rem 1rem;
+      max-width: 960px;
+      margin: auto;
     }
-    .buttons a {
-      text-decoration: none;
-      background: white;
-      color: #4f46e5;
-      padding: 0.8rem 1.5rem;
-      margin: 0 0.5rem;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .buttons a:hover {
-      background: #e0e7ff;
-    }
-    .features {
-      padding: 2rem;
-      text-align: center;
-    }
-    .features h2 {
+    .section h2 {
       font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .feature-list {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .feature {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      width: 250px;
-    }
-    .screenshots {
+      margin-bottom: 1.5rem;
       text-align: center;
-      padding: 2rem;
     }
-    .screenshots img {
-      max-width: 250px;
-      margin: 1rem;
+    .apps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .app-card {
+      background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      padding: 1.5rem;
+      width: 280px;
+      text-align: center;
+    }
+    .app-card h3 {
+      margin: 0.5rem 0;
+      color: #1d4ed8;
+    }
+    .app-card p {
+      font-size: 0.95rem;
+    }
+    .app-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
     }
     footer {
-      background: #111827;
-      color: white;
-      padding: 1rem;
+      background: #1f2937;
+      color: #d1d5db;
+      padding: 2rem 1rem;
       text-align: center;
       font-size: 0.9rem;
+    }
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>📱 Your App Name</h1>
-    <p>A beautiful, fast, and feature-rich app to make your life easier.</p>
-    <div class="buttons">
-      <a href="https://play.google.com/store/apps/details?id=your.package.name" target="_blank">Download on Google Play</a>
-      <a href="#features">See Features</a>
-    </div>
+    <h1>Uniq Software</h1>
+    <p>Innovative Mobile App Development Company</p>
   </header>
 
-  <section class="features" id="features">
-    <h2>🌟 Features</h2>
-    <div class="feature-list">
-      <div class="feature">
-        <h3>🚀 Fast Performance</h3>
-        <p>Optimized for speed and smooth performance.</p>
-      </div>
-      <div class="feature">
-        <h3>🎨 Beautiful UI</h3>
-        <p>Modern and clean design that’s easy to use.</p>
-      </div>
-      <div class="feature">
-        <h3>🔒 Privacy Focused</h3>
-        <p>We respect your data and never share it.</p>
-      </div>
-    </div>
+  <section class="section">
+    <h2>🚀 About Us</h2>
+    <p style="text-align: center; max-width: 700px; margin: auto;">
+      At <strong>Uniq Software</strong>, we craft powerful, user-centric Android applications that solve real-world problems and entertain millions. With a focus on clean UI, great performance, and modern features, our apps consistently receive top reviews on the Play Store.
+    </p>
   </section>
 
-  <section class="screenshots">
-    <h2>📸 Screenshots</h2>
-    <img src="screenshot1.png" alt="App Screenshot 1" />
-    <img src="screenshot2.png" alt="App Screenshot 2" />
+  <section class="section">
+    <h2>📱 Our Apps</h2>
+    <div class="apps">
+      <div class="app-card">
+        <img src="diary-icon.png" alt="Personal Diary App" />
+        <h3>Personal Diary</h3>
+        <p>A private, secure journal to store your daily thoughts with backup and lock features.</p>
+      </div>
+      <div class="app-card">
+        <img src="nickname-icon.png" alt="Nickname Maker App" />
+        <h3>Nickname Maker</h3>
+        <p>Stylish nickname and username generator for gamers and social media lovers.</p>
+      </div>
+      <div class="app-card">
+        <img src="attitude-icon.png" alt="Attitude Status App" />
+        <h3>Attitude Status</h3>
+        <p>Thousands of cool attitude quotes and captions in English and Hindi, updated daily.</p>
+      </div>
+      <div class="app-card">
+        <img src="edge-icon.png" alt="Edge Lighting App" />
+        <h3>Edge Lighting</h3>
+        <p>Make your screen glow with animated border lights. Custom colors and effects included.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Your Name | <a href="mailto:your@email.com" style="color:#93c5fd;">Contact</a></p>
+    <p>© 2025 Uniq Software | Built with ❤️ in India</p>
+    <p>Contact: <a href="mailto:contact@uniqsoftware.com">contact@uniqsoftware.com</a></p>
   </footer>
 
 </body>
