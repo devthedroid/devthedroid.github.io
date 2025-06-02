@@ -2,17 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Unique Software - Innovative Android Apps</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9; }
     header { background: #111; color: #fff; padding: 2rem; text-align: center; }
     nav { background: #222; color: white; padding: 1rem; display: flex; justify-content: center; gap: 2rem; }
     nav a { color: white; text-decoration: none; }
-    .container { padding: 2rem; max-width: 1000px; margin: auto; }
-    .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-    .app-card { border: 1px solid #ccc; border-radius: 8px; padding: 1rem; text-align: center; }
-    .app-card a { text-decoration: none; color: #007BFF; }
+    .container { padding: 2rem; max-width: 1200px; margin: auto; }
+    .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .app-card { background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .app-card img.icon { width: 80px; height: 80px; border-radius: 16px; }
+    .app-card h3 { margin: 1rem 0 0.5rem; }
+    .app-card p { font-size: 0.95rem; color: #555; }
+    .app-card a { display: inline-block; margin-top: 1rem; text-decoration: none; color: #007BFF; font-weight: bold; }
+    .screenshots { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem; }
+    .screenshots img { width: 100px; height: auto; border-radius: 8px; border: 1px solid #ddd; }
     footer { background: #111; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
   </style>
 </head>
@@ -34,26 +39,59 @@
     <section id="apps">
       <h2>Our Android Apps</h2>
       <div class="apps">
+
+        <!-- App 1: Nickname Generator -->
         <div class="app-card">
-          <h3>Gaming Nickname Generator</h3>
+          <img class="icon" src="https://play-lh.googleusercontent.com/8vXb0Xr1zYz5xqZ6Z1J6vZk9Z1J6vZk9Z1J6vZk9Z1J6vZk9Z1J6vZk9Z1J6vZk9Z1J6vZk9=w240-h480" alt="Nickname Generator Icon">
+          <h3>Nickname Generator</h3>
           <p>Create stylish and unique gamer tags in seconds.</p>
           <a href="https://play.google.com/store/apps/details?id=nickname.generator.gamingname" target="_blank">View on Play Store</a>
+          <div class="screenshots">
+            <img src="https://play-lh.googleusercontent.com/8vXb0Xr1zYz5xqZ6Z1J6vZk9Z1J6vZk9Z1J6vZk9=w1052-h592" alt="Screenshot 1">
+            <img src="https://play-lh.googleusercontent.com/8vXb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 2">
+            <img src="https://play-lh.googleusercontent.com/8vXb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 3">
+          </div>
         </div>
+
+        <!-- App 2: Attitude Status in Hindi -->
         <div class="app-card">
+          <img class="icon" src="https://play-lh.googleusercontent.com/3bYb0Xr1zYz5xqZ6Z1J6vZk9=w240-h480" alt="Attitude Status Icon">
           <h3>Attitude Status in Hindi</h3>
           <p>Express your mood with the best Hindi attitude quotes & Shayari.</p>
           <a href="https://play.google.com/store/apps/details?id=attitude.status.hindi.attitudestatushindishayari" target="_blank">View on Play Store</a>
+          <div class="screenshots">
+            <img src="https://play-lh.googleusercontent.com/3bYb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 1">
+            <img src="https://play-lh.googleusercontent.com/3bYb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 2">
+            <img src="https://play-lh.googleusercontent.com/3bYb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 3">
+          </div>
         </div>
+
+        <!-- App 3: Secret Diary with Lock -->
         <div class="app-card">
+          <img class="icon" src="https://play-lh.googleusercontent.com/5cZb0Xr1zYz5xqZ6Z1J6vZk9=w240-h480" alt="Secret Diary Icon">
           <h3>Secret Diary with Lock</h3>
           <p>Your private thoughts, securely locked and beautifully organized.</p>
           <a href="https://play.google.com/store/apps/details?id=diary.journal.app.diarywithlock" target="_blank">View on Play Store</a>
+          <div class="screenshots">
+            <img src="https://play-lh.googleusercontent.com/5cZb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 1">
+            <img src="https://play-lh.googleusercontent.com/5cZb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 2">
+            <img src="https://play-lh.googleusercontent.com/5cZb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 3">
+          </div>
         </div>
+
+        <!-- App 4: Edge Lighting Live Wallpaper -->
         <div class="app-card">
+          <img class="icon" src="https://play-lh.googleusercontent.com/7dAb0Xr1zYz5xqZ6Z1J6vZk9=w240-h480" alt="Edge Lighting Icon">
           <h3>Edge Lighting Live Wallpaper</h3>
           <p>Stylish border lighting for your screen with vibrant animations.</p>
           <a href="https://play.google.com/store/apps/details?id=edgelighting.borderlight.livewallpaper" target="_blank">View on Play Store</a>
+          <div class="screenshots">
+            <img src="https://play-lh.googleusercontent.com/7dAb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 1">
+            <img src="https://play-lh.googleusercontent.com/7dAb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 2">
+            <img src="https://play-lh.googleusercontent.com/7dAb0Xr1zYz5xqZ6Z1J6vZk9=w1052-h592" alt="Screenshot 3">
+          </div>
         </div>
+
       </div>
     </section>
 
