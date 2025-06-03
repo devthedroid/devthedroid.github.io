@@ -1,36 +1,216 @@
-<div class="grid">
-  <div class="card">
-    <img src="images/borderwallpaper.png" alt="Edge Lighting" />
-    <h3>Edge Lighting</h3>
-    <p>Bring your phone's edges to life with glowing light animations and custom effects.</p>
-    <a href="https://play.google.com/store/apps/details?id=edgelighting.borderlight.livewallpaper" target="_blank">Play Store</a>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Uniq Software | App Development Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --accent: #6366f1;
+      --bg: #f3f4f6;
+      --text: #111827;
+      --card-bg: #ffffff;
+      --footer-bg: #1f2937;
+      --footer-text: #d1d5db;
+    }
 
-  <div class="card">
-    <img src="images/nickname.png" alt="Nickname Maker" />
-    <h3>Nickname Maker</h3>
-    <p>Generate stylish nicknames for games and socials with unique fonts and symbols.</p>
-    <a href="https://play.google.com/store/apps/details?id=nickname.generator.gamingname" target="_blank">Play Store</a>
-  </div>
+    * {
+      box-sizing: border-box;
+    }
 
-  <div class="card">
-    <img src="images/attitude.png" alt="Attitude Status" />
-    <h3>Attitude Status</h3>
-    <p>Find powerful attitude quotes and captions in Hindi & English. Updated daily.</p>
-    <a href="https://play.google.com/store/apps/details?id=attitude.status.hindi.attitudestatushindishayari" target="_blank">Play Store</a>
-  </div>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
 
-  <div class="card">
-    <img src="images/diary.png" alt="Personal Diary" />
-    <h3>Personal Diary</h3>
-    <p>Keep your thoughts safe with a private digital journal secured by a password lock.</p>
-    <a href="https://play.google.com/store/apps/details?id=diary.journal.app.diarywithlock" target="_blank">Play Store</a>
-  </div>
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      padding: 4rem 1rem 2.5rem;
+      text-align: center;
+      color: white;
+    }
 
-  <div class="card">
-    <img src="images/iosdiary.png" alt="iOS Diary App" />
-    <h3>iOS Diary App</h3>
-    <p>Your secure diary for iPhone. Write freely, lock your secrets, and customize your journey.</p>
-    <a href="https://apps.apple.com/us/app/my-personal-diary-with-lock/id6739699394?platform=iphone" target="_blank">App Store</a>
-  </div>
-</div>
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: 800;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2rem 1rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+      opacity: 0.95;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin: 0.6rem 0 0.3rem;
+      color: var(--primary);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      color: #4b5563;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1.1rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin: 0.25rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn.playstore {
+      background-color: #1ed760;
+      color: white;
+    }
+
+    .btn.appstore {
+      background-color: #0a84ff;
+      color: white;
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    @media (max-width: 500px) {
+      header h1 { font-size: 2rem; }
+      .card img { width: 80px; height: 80px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Uniq Software</h1>
+    <p>Innovative Mobile Apps That Inspire, Engage, and Simplify</p>
+  </header>
+
+  <section class="section">
+    <h2>🚀 About Us</h2>
+    <p style="max-width: 700px; margin: auto; text-align: center;">
+      At <strong>Uniq Software</strong>, we build smart, beautiful Android & iOS apps that serve millions globally — from creativity tools to utilities and lifestyle apps.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>🌟 Featured Apps</h2>
+    <div class="grid">
+
+      <div class="card">
+        <img src="images/borderwallpaper.png" alt="Edge Lighting" />
+        <h3>Edge Lighting</h3>
+        <p>Glowing edge lights and animated borders for your home screen.</p>
+        <a href="https://play.google.com/store/apps/details?id=edgelighting.borderlight.livewallpaper" target="_blank" class="btn playstore">Get on Play Store</a>
+      </div>
+
+      <div class="card">
+        <img src="images/nickname.png" alt="Nickname Maker" />
+        <h3>Nickname Maker</h3>
+        <p>Generate stylish names with symbols & fonts for games and socials.</p>
+        <a href="https://play.google.com/store/apps/details?id=nickname.generator.gamingname" target="_blank" class="btn playstore">Get on Play Store</a>
+      </div>
+
+      <div class="card">
+        <img src="images/attitude.png" alt="Attitude Status" />
+        <h3>Attitude Status</h3>
+        <p>Powerful attitude quotes and captions in Hindi & English.</p>
+        <a href="https://play.google.com/store/apps/details?id=attitude.status.hindi.attitudestatushindishayari" target="_blank" class="btn playstore">Get on Play Store</a>
+      </div>
+
+      <div class="card">
+        <img src="images/diary.png" alt="Personal Diary" />
+        <h3>Personal Diary</h3>
+        <p>Private journal with lock and mood tracker — simple & secure.</p>
+        <a href="https://play.google.com/store/apps/details?id=diary.journal.app.diarywithlock" target="_blank" class="btn playstore">Get on Play Store</a>
+      </div>
+
+      <div class="card">
+        <img src="images/iosdiary.png" alt="iOS Diary App" />
+        <h3>iOS Diary</h3>
+        <p>Elegant diary with passcode protection for iPhone users.</p>
+        <a href="https://apps.apple.com/us/app/my-personal-diary-with-lock/id6739699394?platform=iphone" target="_blank" class="btn appstore">Download on App Store</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Uniq Software — Crafted with 💙 for Android & iOS</p>
+    <p><a href="mailto:contact@uniqsoftware.com">contact@uniqsoftware.com</a></p>
+  </footer>
+
+</body>
+</html>
