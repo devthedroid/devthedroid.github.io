@@ -4,84 +4,120 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Uniq Software | App Development Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #6366f1;
+      --secondary: #3b82f6;
+      --bg: #f9fafb;
+      --text: #111827;
+      --card-bg: #ffffff;
+      --footer-bg: #1f2937;
+      --footer-text: #d1d5db;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: #f9fafb;
-      color: #111827;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
     }
+
     header {
-      background: linear-gradient(to right, #6366f1, #3b82f6);
-      color: white;
-      padding: 3rem 1rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      padding: 5rem 1rem 3rem;
       text-align: center;
+      color: white;
     }
+
     header h1 {
-      margin: 0;
       font-size: 3rem;
+      margin: 0;
+      font-weight: 800;
     }
+
     header p {
       margin-top: 1rem;
       font-size: 1.2rem;
+      font-weight: 400;
     }
+
     .section {
-      padding: 3rem 1rem;
-      max-width: 960px;
+      max-width: 1200px;
       margin: auto;
+      padding: 3rem 1rem;
     }
+
     .section h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
       text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
     }
-    .apps {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 2rem;
     }
-    .app-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-      padding: 1.5rem;
-      width: 280px;
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
       text-align: center;
+      transition: transform 0.2s ease;
     }
-    .app-card h3 {
-      margin: 0.5rem 0;
-      color: #1d4ed8;
+
+    .card:hover {
+      transform: translateY(-5px);
     }
-    .app-card p {
-      font-size: 0.95rem;
-    }
-    .app-card img {
-      width: 100px;
-      height: 100px;
+
+    .card img {
+      width: 80px;
+      height: 80px;
       object-fit: contain;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
-    .app-card a {
-      display: inline-block;
-      margin-top: 0.8rem;
-      text-decoration: none;
+
+    .card h3 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin: 0.5rem 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card a {
+      background: var(--secondary);
       color: white;
-      background: #3b82f6;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      transition: background 0.2s;
+      text-decoration: none;
+      padding: 0.5rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease;
     }
-    .app-card a:hover {
+
+    .card a:hover {
       background: #2563eb;
     }
+
     footer {
-      background: #1f2937;
-      color: #d1d5db;
-      padding: 2rem 1rem;
+      background: var(--footer-bg);
+      color: var(--footer-text);
       text-align: center;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
     }
+
     footer a {
       color: #93c5fd;
       text-decoration: none;
@@ -92,52 +128,49 @@
 
   <header>
     <h1>Uniq Software</h1>
-    <p>Innovative Mobile App Development Company</p>
+    <p>Creative Android App Studio Crafting Innovative User Experiences</p>
   </header>
 
   <section class="section">
     <h2>🚀 About Us</h2>
-    <p style="text-align: center; max-width: 700px; margin: auto;">
-      <strong>Uniq Software</strong> is a creative app development company focused on building engaging, functional, and user-friendly Android applications. With a strong focus on quality, we aim to deliver tools and entertainment to users worldwide.
+    <p style="max-width: 700px; margin: auto; text-align: center;">
+      At <strong>Uniq Software</strong>, we specialize in building powerful and user-centric Android apps that solve real-world problems, entertain, and inspire. Our portfolio spans creative tools, personalization utilities, and productivity apps enjoyed by millions globally.
     </p>
   </section>
 
   <section class="section">
-    <h2>📱 Our Apps</h2>
-    <div class="apps">
-      <div class="app-card">
-        <img src="images/borderwallpaper.png" alt="Edge Lighting App" />
+    <h2>📱 Featured Apps</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/borderwallpaper.png" alt="Edge Lighting" />
         <h3>Edge Lighting</h3>
-        <p>Make your phone screen glow with beautiful edge lighting effects and animations.</p>
-        <a href="https://play.google.com/store/apps/details?id=edgelighting.borderlight.livewallpaper" target="_blank">View on Play Store</a>
+        <p>Bring your phone's edges to life with glowing light animations and custom effects.</p>
+        <a href="https://play.google.com/store/apps/details?id=edgelighting.borderlight.livewallpaper" target="_blank">Play Store</a>
       </div>
-
-      <div class="app-card">
-        <img src="images/nickname.png" alt="Nickname Maker App" />
+      <div class="card">
+        <img src="images/nickname.png" alt="Nickname Maker" />
         <h3>Nickname Maker</h3>
-        <p>Create stylish and cool nicknames for games and social media with special characters.</p>
-        <a href="https://play.google.com/store/apps/details?id=nickname.generator.gamingname" target="_blank">View on Play Store</a>
+        <p>Generate stylish nicknames for games and socials with unique fonts and symbols.</p>
+        <a href="https://play.google.com/store/apps/details?id=nickname.generator.gamingname" target="_blank">Play Store</a>
       </div>
-
-      <div class="app-card">
-        <img src="images/attitude.png" alt="Attitude Status App" />
+      <div class="card">
+        <img src="images/attitude.png" alt="Attitude Status" />
         <h3>Attitude Status</h3>
-        <p>Get the best attitude quotes, captions, and status messages in Hindi and English.</p>
-        <a href="https://play.google.com/store/apps/details?id=attitude.status.hindi.attitudestatushindishayari" target="_blank">View on Play Store</a>
+        <p>Find powerful attitude quotes and captions in Hindi & English. Updated daily.</p>
+        <a href="https://play.google.com/store/apps/details?id=attitude.status.hindi.attitudestatushindishayari" target="_blank">Play Store</a>
       </div>
-
-      <div class="app-card">
-        <img src="images/diary.png" alt="Personal Diary App" />
+      <div class="card">
+        <img src="images/diary.png" alt="Personal Diary" />
         <h3>Personal Diary</h3>
-        <p>A secure digital diary app with password lock, reminders, themes, and cloud backup.</p>
-        <a href="https://play.google.com/store/apps/details?id=diary.journal.app.diarywithlock" target="_blank">View on Play Store</a>
+        <p>Keep your thoughts safe with a private digital journal secured by a password lock.</p>
+        <a href="https://play.google.com/store/apps/details?id=diary.journal.app.diarywithlock" target="_blank">Play Store</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Uniq Software | Built with ❤️ in India</p>
-    <p>Contact: <a href="mailto:contact@uniqsoftware.com">contact@uniqsoftware.com</a></p>
+    <p>© 2025 Uniq Software | All rights reserved</p>
+    <p>📧 <a href="mailto:contact@uniqsoftware.com">contact@uniqsoftware.com</a></p>
   </footer>
 
 </body>
